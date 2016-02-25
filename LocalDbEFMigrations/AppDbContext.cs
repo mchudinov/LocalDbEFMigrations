@@ -9,7 +9,7 @@ namespace LocalDbEFMigrations
     {
         public AppDbContext() : base("name=AppDb")
         {
-            AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Directory.GetCurrentDirectory());
+            //AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Directory.GetCurrentDirectory());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
